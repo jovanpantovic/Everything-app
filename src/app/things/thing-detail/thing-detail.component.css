@@ -1,0 +1,59 @@
+.container {
+    width: 100%;
+}
+
+.title:hover {
+    color: lightskyblue;
+}
+
+.id {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    width: 120px;
+    border: 3px solid lightskyblue;
+}
+
+.id > p {
+    margin-right: 15px;
+}
+
+.id:hover {
+    border: 5px solid lightskyblue;
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    border: 3px solid lightskyblue;
+    margin-bottom: 5px;
+}
+
+.name > p {
+    margin-right: 46px;
+}
+
+.name:hover {
+    border: 5px solid lightskyblue;
+}
+
+.desc {
+    display: flex;
+    flex-direction: row;
+    width: 515px;
+    border: 3px solid lightskyblue;
+    margin-bottom: 5px;
+}
+
+.desc > p {
+    margin-right: 40.5px;
+}
+
+.desc:hover {
+    border: 5px solid lightskyblue;
+}
+.btn {
+    margin-top: 10px;
+}

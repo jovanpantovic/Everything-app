@@ -1,0 +1,106 @@
+/* "https://iconsplace.com/wp-content/uploads/_icons/ffa500/256/png/plus-2-icon-11-256.png" slike za listu*/
+
+body {
+    background: whitesmoke;
+    font-family: sans-serif;
+}
+
+.main {
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+}
+
+.logo {
+    height: 100px;
+    width: 210px;
+}
+
+.title {
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+span {
+    font-weight: 700;
+}
+
+.gridRec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: -30px;
+}
+
+.rec {
+    background: lightgray;
+    width: 360px;
+    height: 400px;
+    border-radius: 5%;
+    margin-top: 20px;
+    transition: all 500ms ease-in-out; 
+}
+
+.rec:hover {
+    width: 410px;
+}
+
+.recImg {
+    height: 200px;
+    width: 300px;
+    border-radius: 5%;
+    background: gray;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    margin-top: -10px;
+    margin-left: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul {
+    margin-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style-image: linear-gradient(to left bottom, yellow, orange);
+}
+
+li > p {
+    margin-left: 8px;
+    cursor: pointer;
+    transition: all 100ms ease-in-out;
+}
+
+li > p:hover {
+    font-weight: bold;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 75px;
+}
+
+.footer > a {
+    color: rgb(67, 77, 70);
+    font-family: monospace;
+    font-size: 1.3em;
+    transition: all 100ms ease-in-out;
+}
+
+.footer > a:hover {
+    color: rgb(33, 135, 166);
+}
+
+@media (min-width: 280px) and (max-width: 320px) { .rec { width: 260px; height: 300px; } }
+@media (min-width: 280px) and (max-width: 320px) { .recImg { width: 200px; height: 100px; } }

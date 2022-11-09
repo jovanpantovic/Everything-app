@@ -1,0 +1,47 @@
+<div class="main">
+    <div class="header">
+        <img src="https://getbolddesign.com/wp-content/uploads/2019/05/identite-visuelle-everything-logo-design-get-bold-gael-barnabe-%C2%A9.png" class="logo"/>
+        <p class="title">Sve sto ti <span>treba</span> u gradu</p>
+    </div>
+    <div class="gridRec">
+        <div class="rec">
+            <center><img src="https://upload.wikimedia.org/wikipedia/commons/0/03/TAXI.jpg" class="recImg" /></center>
+            <h3><strong>Taxi</strong></h3>
+            <ul *ngFor="let thing of things; let i = index">
+                <li *ngIf="i < 3" [routerLink]="[thing.id]" routerLinkActive>
+                    <p>{{thing?.name}}</p>
+                </li>
+            </ul>    
+        </div>
+        <div class="rec">
+            <center><img src="https://cdn2.howtostartanllc.com/images/business-ideas/business-idea-images/fast-food.jpg" class="recImg"/></center>
+            <h3><strong>Brza Hrana</strong></h3>
+            <ul *ngFor="let thing of things; let i = index">
+                <li *ngIf="i > 2 && i < 6" [routerLink]="[thing.id]" routerLinkActive>
+                    <p>{{thing?.name}}</p>
+                </li>
+            </ul>
+        </div>
+        <div class="rec">
+            <center><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Tom%27s_Restaurant%2C_NYC.jpg/1280px-Tom%27s_Restaurant%2C_NYC.jpg" class="recImg" /></center>
+            <h3><strong>Restorani</strong></h3>
+            <ul *ngFor="let thing of things; let i = index">
+                <li *ngIf="i > 5 && i < 9" [routerLink]="[thing.id]" routerLinkActive>
+                    <p>{{thing?.name}}</p>
+                </li>
+            </ul>
+        </div>
+        <div class="rec">
+            <center><img src="http://www.r-labs.net/portfolio/enterijer/finestra/c004.jpg" class="recImg"/></center>
+            <h3><strong>Kafici</strong></h3>
+            <ul *ngFor="let thing of things; let i = index">
+                <li *ngIf="i > 8 && i < 12" [routerLink]="[thing.id]" routerLinkActive>
+                    <p>{{thing?.name}}</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="#">Lorem ipsum nat evrem</a>
+    </div> 
+</div>      
